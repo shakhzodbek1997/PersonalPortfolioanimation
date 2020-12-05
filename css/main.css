@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/*colors*/
+:root {
+  --first-color: #4E1116;
+  --black-color: #000;
+  --white-color: #FFF; }
+
+/*fonts*/
+:root {
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1rem;
+  --normal-font-size: 0.93rem;
+  --small-font-size: 0.81rem; }
+  @media screen and (min-width: 768px) {
+    :root {
+      --h1-font-size: 4.5rem;
+      --h2-font-size: 2rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 1.37rem; } }
+
+/*Z index*/
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; }
+
+/* BASE */
+*, ::before, ::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 0 0 0;
+  font-family: var(--body-font);
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: 700;
+  overflow: hidden; }
+
+h1, h2 {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.bd-grid {
+  max-width: 1200px;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--black-color); }
+
+/*---- PAGES ----*/
+/*Nav*/
+.nav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700; }
+  @media screen and (max-width: 768px) {
+    .nav__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      background-image: linear-gradient(var(--black-color), var(--first-color));
+      width: 100%;
+      height: 45%;
+      padding: 1.5rem;
+      border-radius: 0 0 1rem 1rem;
+      transition: .5s; } }
+
+/*# sourceMappingURL=main.css.map */
